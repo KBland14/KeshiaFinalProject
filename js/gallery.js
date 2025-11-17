@@ -10,4 +10,13 @@ function unDo(){
      document.getElementById('image').innerHTML= "Hover over an image below to display here."
 
 	}
-currrentImage[i].setattribute("tabeindex","0")
+
+function noMouse(){
+  
+    currentImages = document.querySelectorAll(".preview" "img")
+    for (var i = 0; i < currentImages.length; i++) { 
+        console.log("Image "+ i)
+
+        currentImages[i].setAttribute("tabindex", "0")
+    }
+}  
