@@ -2,21 +2,22 @@ function upDate(previewPic){
     document.getElementById("image").innerHTML=previewPic.alt
     document.getElementById("image").style.background="url("+previewPic.src+")" ;
 
-  
-	}
+}
 
 function unDo(){
-     document.getElementById("image").style.background="#8e68ff";
-     document.getElementById('image').innerHTML= "Hover over an image below to display here."
+    document.getElementById("image").style.background="#8e68ff";
+    document.getElementById('image').innerHTML= "Hover over an image below to display here."
+ 
+}
 
-	}
+function myPic () {
+   myImages = document.querySelectorAll (".preview")
+    for (var i = 0; i < myImages.length; i++) {
 
-function noMouse(){
-  
-    currentImages = document.querySelectorAll(".preview" "img")
-    for (var i = 0; i < currentImages.length; i++) { 
-        console.log("Image "+ i)
+        console.log (myImages[i])
 
-        currentImages[i].setAttribute("tabindex", "0")
+       myImages[i].setAttribute("tabindex", "0");
+
+        
     }
-}  
+}
